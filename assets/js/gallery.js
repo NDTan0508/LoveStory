@@ -111,8 +111,8 @@
   // Timeline captions (you can customize these)
   // Each memory can have its own specific photo filename
   const timelineCaptions = [
-    { title: 'Ngày Đầu Tiên Chúng Ta Gặp Nhau', date: '19/05', caption: 'Khi câu chuyện của chúng ta bắt đầu 💕', image: 'IMG_4677.JPG' }, 
-    { title: 'Ngày Chúng Ta Bắt Đầu Hẹn Hò', date: '03/05', caption: 'Ngày chúng ta trở thành đôi 💖', image: 'IMG_2942.JPG' },
+    { title: 'Ngày Đầu Gặp Nhau', date: '19/05', caption: 'Khi câu chuyện của chúng ta bắt đầu 💕', image: 'IMG_4677.JPG' }, 
+    { title: 'Bắt Đầu Hẹn Hò', date: '03/05', caption: 'Ngày chúng ta trở thành đôi 💖', image: 'IMG_2942.JPG' },
     { title: 'Sinh Nhật Của Anh', date: '05/08', caption: 'Ngày anh chào đời 🎂💕', image: 'IMG_4287.JPG' },
     { title: 'Kỷ Niệm 100 Ngày', date: '11/08', caption: '100 ngày yêu thương và hạnh phúc 💗', image: 'IMG_4292.JPG' },
     { title: 'Sinh Nhật Của Em', date: '06/09', caption: 'Ngày em tròn 18 🎉💖', image: 'DSCF0412.jpg' },

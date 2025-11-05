@@ -993,6 +993,7 @@ html {
   align-items: center;
   justify-content: center;
   overflow: visible;
+  background: transparent;
 }
 
 .heart-gallery-section .container {
@@ -1008,6 +1009,7 @@ html {
 @media (max-width: 768px) {
   .heart-gallery-section {
     overflow-x: hidden;
+    padding: 60px 10px;
   }
 }
 
@@ -1033,6 +1035,7 @@ html {
   outline: none;
   box-shadow: none;
   background: transparent;
+  overflow: visible;
 }
 
 @keyframes heartPulse {
@@ -1216,10 +1219,10 @@ html {
 
 .timeline-caption {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--muted);
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .timeline-line {
@@ -1285,19 +1288,20 @@ html {
 /* Responsive Design */
 @media (max-width: 768px) {
   .heart-container {
-    width: calc(100vw - 40px);
-    max-width: calc(100vw - 40px);
-    height: calc(100vw - 40px);
-    max-height: calc(100vw - 40px);
+    width: calc(100vw - 20px);
+    max-width: calc(100vw - 20px);
+    height: calc(100vw - 20px);
+    max-height: calc(100vw - 20px);
     margin: 0 auto;
-    overflow: hidden;
+    overflow: visible;
+    padding: 0;
   }
   
   .heart-photo {
-    width: 70px;
-    height: 70px;
-    margin-left: -35px;
-    margin-top: -35px;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
   
   .timeline-container::before {
