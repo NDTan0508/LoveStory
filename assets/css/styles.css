@@ -969,6 +969,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: visible;
+}
+
+@media (max-width: 768px) {
+  .heart-gallery-section {
+    overflow-x: hidden;
+  }
 }
 
 .heart-gallery-title {
@@ -985,8 +992,8 @@ html {
   position: relative;
   width: 800px;
   height: 800px;
-  max-width: 95vw;
-  max-height: 95vw;
+  max-width: 90vw;
+  max-height: 90vh;
   margin: 0 auto;
   animation: heartPulse 4s ease-in-out infinite;
 }
@@ -1014,6 +1021,9 @@ html {
   --rotation: 0deg;
   --scale: 1;
   z-index: 1;
+  transform-origin: center center;
+  margin-left: -50px;
+  margin-top: -50px;
 }
 
 .heart-photo:hover {
@@ -1236,13 +1246,19 @@ html {
 /* Responsive Design */
 @media (max-width: 768px) {
   .heart-container {
-    width: 500px;
-    height: 500px;
+    width: calc(100vw - 40px);
+    max-width: calc(100vw - 40px);
+    height: calc(100vw - 40px);
+    max-height: calc(100vw - 40px);
+    margin: 0 auto;
+    overflow: hidden;
   }
   
   .heart-photo {
     width: 70px;
     height: 70px;
+    margin-left: -35px;
+    margin-top: -35px;
   }
   
   .timeline-container::before {
@@ -1266,6 +1282,26 @@ html {
     right: 20px;
     width: 45px;
     height: 45px;
+    font-size: 20px;
+  }
+  
+  .lightbox {
+    padding: 10px;
+    background: rgba(0,0,0,0.95);
+  }
+  
+  .lightbox-image {
+    max-width: 100%;
+    max-height: 95vh;
+    width: auto;
+    height: auto;
+  }
+  
+  .lightbox-close {
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
     font-size: 20px;
   }
 }
@@ -1312,6 +1348,7 @@ html {
   padding: 24px; 
   z-index: 2000; 
   backdrop-filter: blur(5px);
+  overflow: auto;
 }
 .lightbox.open { 
   display: flex; 
@@ -1322,9 +1359,11 @@ html {
   max-height: 88vh; 
   border-radius: 12px; 
   box-shadow: 0 20px 60px rgba(0,0,0,0.5); 
+  background: transparent;
+  display: block;
 }
 .lightbox-close { 
-  position: absolute; 
+  position: fixed; 
   top: 20px; 
   right: 20px; 
   border: 0; 
@@ -1339,6 +1378,9 @@ html {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: all 0.3s ease;
   z-index: 2001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .lightbox-close:hover {
   background: white;
