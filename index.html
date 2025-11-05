@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>For My Love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta name="description" content="A little website, made with love." />
+  </head>
+  <body class="home">
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <div class="container">
+        <a href="index.html" class="brand-name">DT🩷Surii</a>
+        <div class="nav-links">
+          <a href="ideas.html">Ăn Chơi</a>
+          <a href="story.html">Câu Chuyện</a>
+          <a href="gallery.html">Kho Ảnh</a>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Background with blurred photo -->
+    <div class="background-blur" style="background-image: url('assets/img/DSCF0600.JPG');"></div>
+    
+    <!-- Parallax layers -->
+    <div class="parallax-layer" data-speed="0.5"></div>
+    
+    <!-- Header Section -->
+    <header class="romantic-header">
+      <h1 class="header-title">Nơi Lưu Trữ Tình Yêu Của Chúng Ta 💖</h1>
+    </header>
+
+    <!-- Surprise Section -->
+    <section class="surprise-section">
+      <button class="surprise-btn" id="surpriseBtn">Mở Blindbox 🎁</button>
+    </section>
+
+    <!-- Surprise Modal Popup -->
+    <div class="surprise-modal" id="surpriseModal">
+      <div class="surprise-modal-overlay"></div>
+      <div class="surprise-modal-content">
+        <button class="surprise-close-btn" id="surpriseCloseBtn" aria-label="Close">×</button>
+        <div class="surprise-hearts"></div>
+        <div class="surprise-photo">
+          <img src="assets/img/IMG_4677.JPG" alt="Us together" />
+        </div>
+        <div class="surprise-days-counter">
+          <div class="days-label">Số ngày chúng ta đã bên nhau:</div>
+          <div class="days-number" id="daysCounter">0</div>
+        </div>
+        <div class="surprise-message">Thật may mắn khi gặp được em 💗</div>
+      </div>
+    </div>
+
+    <!-- Journey Timeline Preview Section -->
+    <section class="journey-preview-section">
+      <div class="container">
+        <h2 class="section-title">Hành Trình Yêu Nhau</h2>
+        <div class="journey-timeline-preview" id="journeyPreview">
+          <!-- Timeline items will be generated dynamically -->
+        </div>
+        <div class="cta-buttons">
+          <a class="btn outline" href="story.html">Xem Câu Chuyện Tình Yêu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-preview">
+      <div class="container">
+        <h2 class="section-title">Kỷ Niệm Của Chúng Ta</h2>
+        <div class="gallery-grid-preview">
+          <div class="gallery-item-preview">
+            <img src="assets/img/IMG_4655.JPG" alt="Memory 1" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-item-preview">
+            <img src="assets/img/IMG_4679.JPG" alt="Memory 2" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-item-preview">
+            <img src="assets/img/DSCF0412.jpg" alt="Memory 3" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-item-preview">
+            <img src="assets/img/IMG_4292.JPG" alt="Memory 4" />
+            <div class="gallery-overlay"></div>
+          </div>
+        </div>
+        <div class="cta-buttons">
+          <a class="btn outline" href="gallery.html">Xem Kho Ảnh Của Chúng Ta</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="romantic-footer">
+      <div class="container">
+        <p class="footer-message">Anh sẽ yêu em, hôm nay và mãi mãi 💞</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta name="description" content="A collection of our favorite memories." />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="container">
+        <a href="index.html" class="brand-name">DT🩷Surii</a>
+        <div class="nav-links">
+          <a href="ideas.html">Ăn Chơi</a>
+          <a href="story.html">Câu Chuyện</a>
+          <a href="gallery.html">Kho Ảnh</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container page">
+      <h2>Những Khoảnh Khắc Của Chúng Ta</h2>
+
+      <section class="gallery" id="galleryGrid">
+        <!-- Images will be loaded automatically from assets/img -->
+      </section>
+
+      <script type="application/json" id="images-data">
+        ["1.jpg", "Chưa có tên (Tin của bạn).jpeg", "DSCF0409.jpg", "DSCF0411.jpg", "DSCF0412.jpg", "DSCF0555.jpeg", "DSCF1214.jpg", "IMG_1152.JPG", "IMG_1336.JPG", "IMG_2552.jpg", "IMG_2942.JPG", "IMG_3755.JPG", "IMG_4286.JPG", "IMG_4287.JPG", "IMG_4289.JPG", "IMG_4292.JPG", "IMG_4647.JPG", "IMG_4649.JPG", "IMG_4655.JPG", "IMG_4666.JPG", "IMG_4670.JPG", "IMG_4677.JPG", "IMG_4678.JPG", "IMG_4679.JPG", "IMG_4680.JPG", "IMG_4845.jpg", "IMG_5249.JPG", "IMG_6342.JPG", "IMG_6354.JPG", "quality_restoration_20250525150722424.JPG"]
+      </script>
+
+      <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close">×</button>
+        <img class="lightbox-image" alt="Expanded" />
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>Nơi lưu trữ tình yêu ❤️ của chúng ta</small>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
