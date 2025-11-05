@@ -181,9 +181,9 @@
     const journeyPreview = document.getElementById('journeyPreview');
     if (!journeyPreview) return;
     
-    // Get the 4 specific timeline items: 19/05, 03/05, 11/08, forever
+    // Get the 4 specific timeline items: 19/04, 03/05, 11/08, forever
     const previewMemories = [
-      { title: 'Ngày Đầu Gặp Nhau', date: '19/05', caption: 'Khi câu chuyện của chúng ta bắt đầu 💕', image: 'IMG_4677.JPG' },
+      { title: 'Ngày Đầu Gặp Nhau', date: '19/04', caption: 'Khi câu chuyện của chúng ta bắt đầu 💕', image: 'IMG_4677.JPG' },
       { title: 'Bắt Đầu Hẹn Hò', date: '03/05', caption: 'Ngày chúng ta trở thành đôi 💖', image: 'IMG_2942.JPG' },
       { title: 'Kỷ Niệm 100 Ngày', date: '11/08', caption: '100 ngày yêu thương và hạnh phúc 💗', image: 'IMG_4292.JPG' },
       { title: 'Mãi Mãi', date: 'forever', caption: 'Mong tình yêu kéo dài bền chặt 💞', image: 'IMG_4679.JPG' }
